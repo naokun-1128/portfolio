@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naoya Saito | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay">
+      <h1>Naoya Saito</h1>
+      <p>Welcome to my very first portfolio website.</p>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="card">
+      <h2>About Me</h2>
+      <button class="toggle-button" onclick="toggleAbout()">Show Profile</button>
+      <div class="about-text" id="aboutText">
+        <p>
+          I decided not to take over my family’s business and chose to pursue my long-standing interest in the IT industry.<br>
+        Taking this opportunity, I enrolled in a training school and made the leap into the world of IT. 
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML / CSS / JavaScript</li>
+        <li>Pixel Art / Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Projects</h2>
+      <p>Coming soon...</p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <ul>
+        <li>GitHub: <a href="https://github.com/naokun-1128" target="_blank">naokun-1128</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Naoya Saito
+  </footer>
+
+  <script>
+    function toggleAbout() {
+      const text = document.getElementById("aboutText");
+      const button = document.querySelector(".toggle-button");
+      if (text.style.display === "none" || text.style.display === "") {
+        text.style.display = "block";
+        button.textContent = "Hide Profile";
+      } else {
+        text.style.display = "none";
+        button.textContent = "Show Profile";
+      }
+    }
+  </script>
+</body>
+</html>

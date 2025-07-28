@@ -1,0 +1,92 @@
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  background: #cceeff;
+  color: #333;
+}
+
+.hero {
+  height: 100vh;
+  background: url('background.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.overlay h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.overlay p {
+  font-size: 0.9em;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: #fff;
+  border: 3px dashed #0099cc;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #0077aa;
+  border-bottom: 2px solid #00bbff;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #0077aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background: #e0f7fa;
+  font-size: 0.7em;
+  color: #006877;
+}
+
+.toggle-button {
+  background-color: #00bbff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 1em;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.toggle-button:hover {
+  background-color: #0099cc;
+}
+
+.about-text {
+  display: none;
+  margin-top: 10px;
+  line-height: 1.8;
+}
